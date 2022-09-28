@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja en movimiento con imágenes</title>
+</head>
+<style>
+    div {
+  width: 320px;
+  height: 200px;
+  background: pink;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-duration: 8s;
+  animation: img 5s infinite;
+
+}
+h1{
+    color: rgb(240, 23, 124);
+    font-family: cursive;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 400px;}
+}
+@keyframes example{
+    from{background-color: violet;}
+    to{background-color: orange;}
+}
+@keyframes img{
+    from{left: 0px;}
+    to{left: 400px;}
+}
+.card-info{
+    width: 320px;
+    height: 80px;
+    color: black;
+    font-family: cursive;
+    font-size: 200%;
+    text-align: center;
+    
+}
+.card img{
+   
+    width: 320px;
+    height: 200px;
+    flex-wrap:nowrap;
+    display: inline-flex;
+    float: left;
+}
+    
+</style>
+<body>
+    <h1>Caja en movimiento</h1>
+    <div class="card-info">www.kedulce.com.ar</div>
+    <div class="card img">
+    <img src="https://picsum.photos/id/102/320/200" alt="Suerte">
+    
+</div>
+</body>
+</html>

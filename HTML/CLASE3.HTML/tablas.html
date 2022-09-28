@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     table {
+        width: 800px;
+        height: 800px;
+        border: 5px red dotted;
+    }
+    td,
+    th {
+        border: 2px solid;
+    }
+    #coloreado{
+        background-color: darksalmon;
+        color: floralwhite;
+        font-size: 1.5em;
+    
+    }
+        
+        #coloreadoFila{
+                        
+            background-color: goldenrod;
+    }
+    #celda15{
+        background-image: url(perro.jpg);
+        background-size: cover;
+    }
+        
+
+</style>
+<body>
+    <table cellspacing=0 cellpadding=20>
+        <tr>
+            <th id="coloreado">celda 25</th>
+            <th>celda 2</th>
+            <th>celda 3</th>
+            <th>celda 4</th>
+        </tr>
+        <tr id="coloreadoFila">
+            <td>celda 5</td>
+            <td>celda 6</td>
+            <td>celda 7</td>
+            <td>celda 8</td>
+        </tr>
+        <tr>
+
+            <td colspan="3" align="center">celda 9</td>
+            <!-- <td>celda 10</td>
+            <td>celda 11</td> -->
+            <td rowspan="2" valign='top'>celda 12</td>
+
+        </tr>
+        <tr>
+            <td>celda 13</td>
+            <td>celda 14</td>
+            <td id="celda15"></td>
+            <!-- <td>celda 16</td> -->
+        </tr>
+    </table> 
+</body>
+</html>
